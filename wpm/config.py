@@ -51,14 +51,14 @@ DEFAULTS = {
     },
 
     "xterm256colors": {
-        "author": (int_tuple, (240, 233), ""),
-        "background": (int, 233, ""),
-        "correct": (int_tuple, (240, 233), ""),
+        "author": (int_tuple, (240, 234), ""),
+        "background": (int, 234, ""),
+        "correct": (int_tuple, (240, 234), ""),
         "incorrect": (int_tuple, (197, 52), ""),
-        "prompt": (int_tuple, (244, 233), ""),
-        "quote": (int_tuple, (195, 233), ""),
+        "prompt": (int_tuple, (244, 234), ""),
+        "quote": (int_tuple, (15, 234), ""),
         "score": (int_tuple, (230, 197), ""),
-        "top_bar": (int_tuple, (51, 24), ""),
+        "top_bar": (int_tuple, (15, 138), ""),
     },
 
     "xtermcolors": {
