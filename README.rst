@@ -209,25 +209,3 @@ You can enable certain unofficial features by seting the environment variable
 `WPM_DEVFEATURES=feature1:feature2:etc.`.
 
 Look in the file `wpm/devfeatures.py` for a list.
-
-License
--------
-
-Copyright 2017, 2018 Christian Stigen Larsen
-
-Distributed under the GNU Affero General Public License (AGPL) v3 or later. See
-the file LICENSE.txt for the full license text. This software makes use of open
-source software.
-
-The quotes database is *not* covered by the AGPL!
-
-.. |license| image:: https://img.shields.io/badge/license-AGPL%20v3%2B-blue.svg
-    :target: https://www.gnu.org/licenses/agpl-3.0.html
-    :alt: Project License
-
-.. |versions| image:: https://img.shields.io/badge/python-2.7%2B%2C%203%2B%2C%20pypy-blue.svg
-    :target: https://pypi.python.org/pypi/wpm/
-    :alt: Supported Python versions
-
-.. |pypi| image:: https://badge.fury.io/py/wpm.svg
-    :target: https://badge.fury.io/py/wpm
