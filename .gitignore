@@ -1,0 +1,6 @@
+*.csv
+*.egg-info
+*.pyc
+.tox
+build
+dist
