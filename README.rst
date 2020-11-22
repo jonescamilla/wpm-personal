@@ -1,6 +1,5 @@
 wpm — measure and improve your typing speed
 ===========================================
-|versions| |license| |pypi|
 
 ``wpm`` is a curses-based UNIX terminal program for measuring and improving your typing
 speed (measured in words per minute, or WPM).
@@ -52,7 +51,9 @@ How to run
 ----------
 
 Just type ``wpm`` to start the program. The timer will start when you press the
-first key. At any time, you can hit ESCAPE to quit.
+first key. At any time, you can hit ``TAB`` to reset the test with a new test.
+
+If you wnat to exit the application entirely feel free to ``esc``
 
 You can backspace for the current word you're editing, if you make a mistake.
 Mistakes will lower the accuracy score.
@@ -71,39 +72,6 @@ gauge your typing speed. And it works offline, and with your own texts.
 Regarding TypeRacer, I really suggest everyone check it out. I use this program
 merely to warm up before heading over to typeracer.com, where you can race
 against others.
-
-How to get the lowest typing latency
-------------------------------------
-
-Run outside of tmux, and use a really speedy terminal window. On my macOS
-system, I found the best latency using the built-in Terminal.app, which easily
-beats iTerm. I also found the Kitty terminal to provide very low latency.
-
-On Linux, the ultimate typing latency is achieved if you open up one of the
-virtual consoles. For example, hit CTRL+ALT+F2 and log in, set your
-``TERM=xterm-color`` and run ``wpm``. Many terms also have quite a high
-latency. Try using uxterm if you need to run it inside X.
-
-How to improve your typing speed
---------------------------------
-
-I believe that everyone can type at 100 WPM with enough practice. If you are
-currently typing slower than that, my suggestions are:
-
-* Learn to type without looking at the keyboard
-* Learn to use all your fingers
-* Sit up straight and type in a comfortable situation
-
-If you are consistently above 100 WPM:
-
-* Focus on the next word
-* Type words instead of characters
-* Train muscle memory
-* Type hard parts slower
-* Raise your wrists
-
-Practice a little bit every few days, but don't overdo it. Stop when you're
-tired or feeling unmotivated.
 
 Loading custom texts
 --------------------
@@ -201,33 +169,3 @@ wpm            wrap_width                       -1 If positive, wrap text at thi
 xterm256colors                                     Color codes for 256-color terminals (foreground, background)
 xtermcolors                                        Color codes for ordinary terminals (foreground, background)
 ============== =========================== ======= =============================================================================
-
-Development features
---------------------
-
-You can enable certain unofficial features by seting the environment variable
-`WPM_DEVFEATURES=feature1:feature2:etc.`.
-
-Look in the file `wpm/devfeatures.py` for a list.
-
-License
--------
-
-Copyright 2017, 2018 Christian Stigen Larsen
-
-Distributed under the GNU Affero General Public License (AGPL) v3 or later. See
-the file LICENSE.txt for the full license text. This software makes use of open
-source software.
-
-The quotes database is *not* covered by the AGPL!
-
-.. |license| image:: https://img.shields.io/badge/license-AGPL%20v3%2B-blue.svg
-    :target: https://www.gnu.org/licenses/agpl-3.0.html
-    :alt: Project License
-
-.. |versions| image:: https://img.shields.io/badge/python-2.7%2B%2C%203%2B%2C%20pypy-blue.svg
-    :target: https://pypi.python.org/pypi/wpm/
-    :alt: Supported Python versions
-
-.. |pypi| image:: https://badge.fury.io/py/wpm.svg
-    :target: https://badge.fury.io/py/wpm
