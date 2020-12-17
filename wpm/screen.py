@@ -401,7 +401,7 @@ class Screen(object):
         self.cheight += 1
         self.set_cursor(0, self.cheight)
         self.addstr(0, self.cheight,
-                    "Start typing, hit SPACE/ARROWS to browse or ESC to quit.",
+                    "Start typing, hit ARROWS to browse or ESC to quit.",
                     Screen.COLOR_PROMPT)
 
     def show_stats(self, stats, cpm_flag):
